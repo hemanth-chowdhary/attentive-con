@@ -666,7 +666,7 @@ let joinRoomInit = async () => {
   client.on("user-left", handleUserLeft);
 
   const roomLabel = document.getElementById("room-label");
-  roomLabel.textContent = roomId;
+  roomLabel.textContent = `Room: ${roomId}`;
 
   await joinStream();
 };
